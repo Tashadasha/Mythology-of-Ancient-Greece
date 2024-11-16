@@ -276,22 +276,15 @@
         </ul>
     </div>
 <script>
-        function showSection(id) {
+        function showSection(sectionId) {
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => section.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-        }
 
-        document.getElementById("toggle-button").addEventListener("click", function() {
-            const panel = document.getElementById("side-panel");
-            if (panel.style.left === "0px") {
-                panel.style.left = "-250px";
-            } else {
-                panel.style.left = "0";
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
             }
-        });
+        }
     </script>
-
 </body>
 </html>
-    
