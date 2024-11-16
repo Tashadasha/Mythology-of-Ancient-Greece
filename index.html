@@ -43,6 +43,76 @@
         th {
             background-color: #f4f4f4;
         }
+
+        /* Стилі для висувної панелі */
+        .side-panel {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #f4f4f4;
+            transition: left 0.3s ease;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .side-panel ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .side-panel ul li {
+            margin: 10px 0;
+        }
+
+        .side-panel ul li a {
+            color: #0066cc;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Стилі для кнопки */
+        #toggle-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Стиль для кнопки при натисканні */
+        #toggle-button:hover {
+            background-color: #004d99;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Кнопка для відкриття меню -->
+    <button id="toggle-button">Показати меню</button>
+
+    <!-- Висувна панель -->
+    <div id="side-panel" class="side-panel">
+        <nav>
+            <ul>
+                <li><a onclick="showSection('intro')">Вступ</a></li>
+                <li><a onclick="showSection('gods')">Боги та Богині</a></li>
+                <li><a onclick="showSection('titans')">Титани</a></li>
+                <li><a onclick="showSection('nymphs')">Німфи</a></li>
+                <li><a onclick="showSection('heroes')">Герої</a></li>
+                <li><a onclick="showSection('monsters')">Чудовиська</a></li>
+                <li><a onclick="showSection('informatics')">Вплив на Інформатику</a></li>
+                <li><a onclick="showSection('other_deities')">Інші духи та божества</a></li>
+                <li><a onclick="showSection('interesting_facts')">Інші цікавинки про міфологію</a></li>
+            </ul>
+        </nav>
+    </div>
     </style>
 </head>
 <body>
@@ -273,17 +343,23 @@
         <li><a href="https://youtu.be/hOml_mfC0UE?si=802lkU-kmF7rIw_O" target="_blank">Відео: Хто жив на Олімпі</a> — Огляд грецьких богів і титану на YouTube.</li>
         </ul>
     </div>
-
-    <script>
+<script>
         function showSection(id) {
-            // Вибір усіх секцій
             const sections = document.querySelectorAll('.section');
-            // Приховування усіх секцій
             sections.forEach(section => section.classList.remove('active'));
-            // Показуємо лише вибрану секцію
             document.getElementById(id).classList.add('active');
         }
+
+        document.getElementById("toggle-button").addEventListener("click", function() {
+            const panel = document.getElementById("side-panel");
+            if (panel.style.left === "0px") {
+                panel.style.left = "-250px";
+            } else {
+                panel.style.left = "0";
+            }
+        });
     </script>
 
 </body>
 </html>
+    
