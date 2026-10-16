@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вікторина — Міфологія Давньої Греції</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← На головну</a>
+        <h1>🏛️ Міфологічна вікторина</h1>
+        <p>Перевір, наскільки добре ти знаєш міфи Давньої Греції!</p>
+    </header>
+
+    <main class="quiz-container">
+
+        <div id="quiz">
+            <div class="quiz-info">
+                <span id="question-number">Запитання 1 із 15</span>
+                <span id="score">Бали: 0</span>
+            </div>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h2 id="question">Запитання з'явиться тут</h2>
+
+            <div id="answers" class="answers"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <button id="next-button" disabled>Наступне запитання →</button>
+        </div>
+
+        <div id="result" class="result hidden">
+            <h2>✨ Вікторину завершено!</h2>
+            <p id="final-score"></p>
+            <p id="result-message"></p>
+            <button id="restart-button">Пройти ще раз</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Міфологія Давньої Греції | Пізнавай легенди Олімпу</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

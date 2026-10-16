@@ -1,0 +1,93 @@
+
+    {
+        "id": 1,
+        "name": "Зевс",
+        "category": "Боги",
+        "description": "Верховний бог Олімпу, володар неба, грому та блискавок. Син Крона і Реї.",
+        "symbol": "Блискавка, орел",
+        "image": "https://raw.githubusercontent.com/Tashadasha/Mythology-of-Ancient-Greece/main/1.jpg"
+    }
+    {,
+        "id": 2,
+        "name": "Посейдон",
+        "category": "Боги",
+        "description": "Бог морів, океанів і землетрусів. Його головним атрибутом був тризуб.",
+        "symbol": "Тризуб, кінь",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Caravaggio.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Афіна",
+        "category": "Боги",
+        "description": "Богиня мудрості, військової стратегії та ремесел. Вважалася покровителькою Афін.",
+        "symbol": "Сова, щит, спис",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Athena_Giustiniani.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Афродіта",
+        "category": "Боги",
+        "description": "Богиня кохання, краси та привабливості. У міфах вона часто впливала на долі богів і смертних.",
+        "symbol": "Голуб, мушля",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Venus_de_Milo_Louvre_Ma399_n4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Аполлон",
+        "category": "Боги",
+        "description": "Бог музики, поезії, пророцтв і стрільби з лука. Також був пов'язаний зі світлом.",
+        "symbol": "Ліра, лавровий вінок",
+        "image": "https://raw.githubusercontent.com/Tashadasha/Mythology-of-Ancient-Greece/main/2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Артеміда",
+        "category": "Боги",
+        "description": "Богиня полювання, дикої природи та захисниця молодих дівчат. Сестра-близнючка Аполлона.",
+        "symbol": "Лук, стріли, олень",
+        "image": "https://raw.githubusercontent.com/Tashadasha/Mythology-of-Ancient-Greece/main/3.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Геракл",
+        "category": "Герої",
+        "description": "Видатний герой, відомий дванадцятьма подвигами, серед яких перемога над Немейським левом і Лернейською гідрою.",
+        "symbol": "Палиця, левова шкура",
+        "image": "https://raw.githubusercontent.com/Tashadasha/Mythology-of-Ancient-Greece/main/6.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Персей",
+        "category": "Герої",
+        "description": "Герой, який переміг Медузу Горгону та врятував Андромеду від морського чудовиська.",
+        "symbol": "Меч, щит, шолом",
+        "image": "https://raw.githubusercontent.com/Tashadasha/Mythology-of-Ancient-Greece/main/7.gif"
+    },
+    {
+        "id": 9,
+        "name": "Ахіллес",
+        "category": "Герої",
+        "description": "Один із найвидатніших воїнів Троянської війни. Його ім'я пов'язують із поняттям ахіллесової п'яти.",
+        "symbol": "Щит, спис",
+        "image": "https://raw.githubusercontent.com/Tashadasha/Mythology-of-Ancient-Greece/main/8.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Тесей",
+        "category": "Герої",
+        "description": "Афінський герой, який переміг Мінотавра в лабіринті на Криті. Аріадна допомогла йому знайти вихід.",
+        "symbol": "Меч, нитка Аріадни",
+        "image": "https://raw.githubusercontent.com/Tashadasha/Mythology-of-Ancient-Greece/main/6.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Медуза",
+        "category": "Чудовиська",
+        "description": "Одна з горгон. За відомим міфом, її погляд перетворював людей на камінь, а замість волосся були змії.",
+        "symbol": "Змії, кам'яний погляд",
+        "image": "https://raw.githubusercontent.com/Tashadasha/Mythology-of-Ancient-Greece/main/9.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Мінотавр",
+        "category": "Чудовиська",

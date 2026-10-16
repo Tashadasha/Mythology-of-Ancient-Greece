@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея — Міфологія Давньої Греції</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← На головну</a>
+
+        <h1>🏛️ Галерея міфології</h1>
+
+        <p>
+            Відкрий для себе богів, героїв і загадкових істот
+            Давньої Греції.
+        </p>
+    </header>
+
+    <main>
+        <div class="filters">
+            <button class="filter-button active" data-category="Усі">
+                Усі персонажі
+            </button>
+
+            <button class="filter-button" data-category="Боги">
+                ⚡ Боги
+            </button>
+
+            <button class="filter-button" data-category="Герої">
+                🛡️ Герої
+            </button>
+
+            <button class="filter-button" data-category="Чудовиська">
+                🐉 Чудовиська
+            </button>
+
+            <button class="filter-button" data-category="Титани">
+                🌌 Титани
+            </button>
+        </div>
+
+        <div id="search-container">
+            <input
+                type="search"
+                id="search-input"
+                placeholder="Знайти персонажа..."
+                aria-label="Пошук персонажа"
+            >
+        </div>
+
+        <p id="results-count" aria-live="polite"></p>
+
+        <section id="gallery" class="gallery">
+            <p class="loading">Завантаження персонажів...</p>
+        </section>
+
+        <p id="error-message" class="error-message hidden"></p>
+    </main>
+
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button id="close-modal" class="close-modal" aria-label="Закрити">
+                ×
+            </button>
+
+            <img id="modal-image" src="" alt="">
+
+            <h2 id="modal-title"></h2>
+
+            <p id="modal-category"></p>
+
+            <p id="modal-description"></p>
+
+            <p id="modal-symbol"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Міфологія Давньої Греції | Галерея персонажів</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
